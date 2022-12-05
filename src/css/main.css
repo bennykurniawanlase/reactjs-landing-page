@@ -1,0 +1,75 @@
+* {
+	font-family: "poppins", sans-serif;
+}
+
+.hero {
+	background-image: linear-gradient(rgba(94, 94, 94, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/hero/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 100px;
+}
+
+.hero h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.navbar {
+	padding: 10px 0;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: all 0.5s ease-in-out;
+}
+
+.navbar.color-active {
+	background-color: #212529;
+	transform: scaleY(1);
+	padding: 15px 0;
+}
+
+.gallery img {
+	height: 230px;
+}
+
+.faq {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.faq .accordion {
+	--bs-accordion-bg: #d6ffd6;
+}
+
+.faq .accordion .accordion-item .accordion-header {
+	line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+	box-shadow: none;
+}
+
+@media screen and (max-width: 1440px) {
+	.gallery img {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.services {
+		padding-top: 100px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.gallery img {
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.gallery img {
+		height: 200px;
+	}
+}
